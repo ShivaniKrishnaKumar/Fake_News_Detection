@@ -2,10 +2,6 @@
     <h1>Fake News Detection in Tamil and English</h1>
 </div>
 
-[![Deploy to Streamlit](https://img.shields.io/badge/Deploy-Streamlit-red)](https://streamlit.io/)
-![Python](https://img.shields.io/badge/Made%20with-Python-blue)
-![NLP](https://img.shields.io/badge/NLP-BERT%20Models-orange)
-
 <i>
 
 ## Overview
@@ -14,11 +10,12 @@ A multilingual fake news detection system that uses Transformer-based deep learn
 ## Contents
 - [Problem Statement](#problem-statement)
 - [Solution Approach](#solution-approach)
+- [Workflow](#workflow)  
 - [Data Collection](#data-collection)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Training & Evaluation](#model-training--evaluation)
 - [Usage](#usage)
-- [Flowchart](#results)
+- [UserInterface](#userinterface)
 - [Future Enhancements](#future-enhancements)
 
 ## Problem Statement
@@ -30,6 +27,11 @@ Fake news spreads quickly on social media, leading to misinformation, societal h
   - **English**: DistilBERT, ALBERT
   - **Tamil**: DistilMBERT, IndicBERT
 - The system is deployed as a **Streamlit-based web application**, allowing users to submit news articles for verification.
+
+## Workflow
+<div align='center'>
+    <img src='images/Flowchart.png' alt='Workflow Diagram'>
+</div>
 
 ## Data Collection
 - Datasets collected from **Kaggle** and other public sources.
@@ -70,11 +72,14 @@ Fake news spreads quickly on social media, leading to misinformation, societal h
    streamlit run app.py
    ```
 
-## Results
+## UserInterface
 <div align='center'>
-    <img src='https://via.placeholder.com/600x300' alt='Model Performance Graph'>
+    <img src='images/web1.jpeg' alt='User Interface Screenshot 1'>
 </div>
-
+<div align='center'>
+    <img src='images/web2.jpeg' alt='User Interface Screenshot 2'>
+</div>
+   
 ## Future Enhancements
 - **Multimodal Analysis**: Include images and videos for verification
 - **Real-time News Analysis**: Scrape live news feeds for automatic classification
